@@ -4,9 +4,7 @@
 El objetivo de esta práctica es ejercitar el uso de punteros.
 
 ## Forma de entrega
-
-* El nombre de cada archivo debe ser `ejercicio` seguido 
-del número de ejercicios más `.c`, de esta manera, el primer ejercicio será entonces `ejercicio1.c`.
+* El nombre de cada archivo debe ser `ejercicio` seguido del número de ejercicios más `.c`, de esta manera, el primer ejercicio será entonces `ejercicio1.c`.
 * Cada archivo debe seguir la estructura indicada dentro de `plantilla.c`, la cual debe estar completa con su nombre y usuario de GitHub. 
 * En ningún caso se aceptará el uso de variables globales. Toda la información necesaria para el funcionamiento de las funciones a desarrollar tienen que ser pasado como argumentos de las mismas.
 * Indiquen las precondiciones y poscondiciones de sus funciones.
@@ -90,7 +88,7 @@ int intercambia(char cadena[], int capacidad_cadena, int origen, int destino);
 Encontrar la longitud de una cadena segura empleando aritmética de punteros y sin usar el operador de arreglos `[]`.
 
 ```c
-int largo_seguro(char *str);
+int largo_seguro(char *str, int capacidad_cadena);
 ```
 
 ### Ejercicio 8 - Búsqueda
@@ -105,12 +103,15 @@ char* busqueda(char cadena[], int capacidad_cadena, char busqueda[], int capacid
 
 ### Ejercicio 9 - Elimina duplicados
 
-Invertir el orden de los elementos presentes en un arreglo
-```c
-int invertir(int arreglo[], int tamaño);
-```
+Implementar una función que elimine los duplicados de un arreglo, retornando el nuevo tamaño.
 
 ### Ejercicio 10 - Reemplazo
 
 Implementar una función que reemplace las vocales de una cadena segura reemplazándolas por un carácter indicado.
 
+### Ejercicio 11 - Inversión
+
+Invertir el orden de los elementos presentes en un arreglo
+```c
+int invertir(int arreglo[], int tamaño);
+```
